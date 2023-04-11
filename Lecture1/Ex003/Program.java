@@ -1,4 +1,4 @@
-package OOP_by_Java.Lecture1.Ex003;
+package Lecture1.Ex003;
 
 public class Program {
 
