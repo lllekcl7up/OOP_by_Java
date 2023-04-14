@@ -28,13 +28,13 @@ public class Main {
         Scanner iScanner = new Scanner( System.in );
         String input = "";
 
-        System.out.println( AnsiColors.ANSI_RED_BACKGR  + "PowerShell не хочет краситься" + AnsiColors.ANSI_RESET);
+        // System.out.println( AnsiColors.ANSI_RED_BACKGR  + "PowerShell не хочет краситься" + AnsiColors.ANSI_RESET);
 
         while( true ) {
             if ( input.equals( "q" ) ) break;
             ConsoleView.view();
 
-            System.out.println( "\n" + AnsiColors.ANSI_RED_BACKGR  + " --- Java не умеет красить текст в PowerShell --- " + AnsiColors.ANSI_RESET + "\n");
+            // System.out.println( "\n" + AnsiColors.ANSI_RED_BACKGR  + " --- Java не умеет красить текст в PowerShell --- " + AnsiColors.ANSI_RESET + "\n");
 
             makeStep();
             System.out.println( "\nPress 'ENTER' to Step() or 'q' to exit program" );

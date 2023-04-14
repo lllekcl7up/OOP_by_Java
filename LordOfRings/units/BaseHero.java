@@ -107,7 +107,7 @@ public abstract class BaseHero implements BaseHeroInterfase, Comparable<BaseHero
         hero.doDamage( damage );
     }
 
-    // Получаем урон - см. HeroInterface, он реализован там... но не переносится... х.з. эту Java
+    // Получаем урон 
     public void doDamage( double damage ) {
         setHealth( getHealth() - damage );
         if ( getHealth() <= 0 ) {
