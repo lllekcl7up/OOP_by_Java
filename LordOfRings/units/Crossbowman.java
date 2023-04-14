@@ -1,18 +1,9 @@
-package LordOfRings.units;
+package OOP_by_Java.LordOfRings.Units;
 
-public class Crossbowman extends Shooter {
-    public Crossbowman(Position coords) {
-        super(60.f, 60, 7, 3, 7, 4,
-                9, 20, 10, coords.posX, coords.posY);
-    }
-
-    @Override
-    public StringBuilder getInfo() {
-        StringBuilder builder = new StringBuilder();
-        return builder.append("Арбалет: \t").append(Crossbowman.super.name)
-                .append("\t| ATK:\t").append(Crossbowman.super.attack)
-                .append("\t| HP:\t").append(Crossbowman.super.hp)
-                .append(" \t| Arrows:").append(Crossbowman.super.ammo)
-                .append("\t|").append("\t| (X.Y) : ").append(Crossbowman.super.coords.posX).append(".").append(Crossbowman.super.coords.posY);
+public class Crossbowman extends BaseShoter {
+    public Crossbowman( String name, int x, int y ) {
+        super( name, "Арбалетчик", 100, 12, 5, 4, 5, 15 );
+        super.setPos( new Point2D( x, y ) );
+        super.ammo = 16;
     }
 }

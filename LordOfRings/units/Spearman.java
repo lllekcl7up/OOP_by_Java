@@ -1,16 +1,9 @@
-package LordOfRings.units;
-public class Spearman extends Warrior {
-    public Spearman( Position coords) {
-        super( 70.f, 70, 10, 2, 4, 10,
-                6, coords.posX, coords.posY);
-    }
+package OOP_by_Java.LordOfRings.Units;
 
-    @Override
-    public StringBuilder getInfo() {
-        StringBuilder builder = new StringBuilder();
-        return builder.append("Копейщик:\t").append(Spearman.super.name)
-                .append("\t| ATK:\t").append(Spearman.super.attack)
-                .append("\t| HP:\t").append(Spearman.super.hp)
-                .append(" \t|\t\t\t|").append("\t| (X.Y) : ").append(Spearman.super.coords.posX).append(".").append(Spearman.super.coords.posY);
+
+public class Spearman extends BaseMelee {
+    public Spearman( String name, int x, int y) {
+        super( name, "Копейщик", 100, 12, 9, 4, 8, 16 );
+        super.setPos( new Point2D( x, y ) );
     }
 }

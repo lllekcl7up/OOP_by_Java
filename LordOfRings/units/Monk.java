@@ -1,21 +1,9 @@
-package LordOfRings.units;
+package OOP_by_Java.LordOfRings.Units;
 
-// import java.util.ArrayList;
 
-public class Monk extends Mage{
-    public Monk(Position coords) {
-        super( 50.f, 50, 10, -7, -7, 3,
-                7, 5 ,5, coords.posX, coords.posY);
-
-    }
-
-    @Override
-    public StringBuilder getInfo() {
-        StringBuilder builder = new StringBuilder();
-        return builder.append("Монах:  \t").append(Monk.super.name)
-                .append("\t| ATK:\t").append(Monk.super.attack)
-                .append("\t| HP:\t").append(Monk.super.hp)
-                .append(" \t| MP:\t").append(Monk.super.mana)
-                .append("\t|").append("\t| (X.Y) : ").append(Monk.super.coords.posX).append(".").append(Monk.super.coords.posY);
+public class Monk extends BaseMelee {
+    public Monk( String name, int x, int y) {
+        super( name, "Монах", 120, 12, 7, 5, 8 );
+        super.setPos( new Point2D( x, y ) );
     }
 }
