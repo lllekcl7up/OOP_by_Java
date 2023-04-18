@@ -30,6 +30,7 @@ public class Main {
 
         // System.out.println( AnsiColors.ANSI_RED_BACKGR  + "PowerShell не хочет краситься" + AnsiColors.ANSI_RESET);
 
+
         while( true ) {
             if ( input.equals( "q" ) ) break;
             ConsoleView.view();
